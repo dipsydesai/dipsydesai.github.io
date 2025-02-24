@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,5 +69,36 @@
             <p>&copy; 2025 Dipsy Desai. All rights reserved.</p>
         </div>
     </footer>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Construction</title>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+    <p>This website is currently under construction. Please check back later.</p>
+    <form onsubmit="return checkPassword()">
+        <label for="password">Enter password to access site:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === 'your-password') {
+                window.location.href = 'your-github-pages-site-url'; // Redirect to your full site
+            } else {
+                alert('Incorrect password!');
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
